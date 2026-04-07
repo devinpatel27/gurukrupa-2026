@@ -84,32 +84,32 @@ export default function HomePage() {
                             </a>
                         </div>
                     </div>
-                    <div className="flex-1 relative">
-                        <div className="relative w-full aspect-square max-w-lg mx-auto">
-                            <div className="absolute inset-0 bg-[#035797] rounded-[3rem] rotate-6 opacity-10 animate-pulse"></div>
-                            <div className="absolute inset-0 bg-[#0D3B50] rounded-[3rem] -rotate-3 opacity-5"></div>
-                            <div className="relative z-10 w-full h-full glass rounded-[3rem] p-12 flex items-center justify-center overflow-hidden group">
+                    <div className="flex-1 w-full relative">
+                        <div className="relative w-full aspect-square max-w-sm lg:max-w-lg mx-auto">
+                            <div className="absolute inset-0 bg-[#035797] rounded-[2.5rem] lg:rounded-[3rem] rotate-6 opacity-10 animate-pulse"></div>
+                            <div className="absolute inset-0 bg-[#0D3B50] rounded-[2.5rem] lg:rounded-[3rem] -rotate-3 opacity-5"></div>
+                            <div className="relative z-10 w-full h-full glass rounded-[2.5rem] lg:rounded-[3rem] p-6 lg:p-12 flex items-center justify-center overflow-hidden group text-center">
                                 <Image
                                     src="/product-images/kent/imgi_4_kent-grand-star-b.webp"
                                     alt="Premium Water Purifier"
                                     fill
-                                    className="object-contain p-12 transition-transform duration-700 group-hover:scale-105"
+                                    className="object-contain p-6 lg:p-12 transition-transform duration-700 group-hover:scale-105"
                                     priority
                                 />
                             </div>
 
                             {/* Floating Badges */}
-                            <div className="absolute -top-6 -right-6 glass p-5 rounded-2xl shadow-2xl z-20 animate-bounce transition-all">
-                                <div className="text-3xl mb-1">🛡️</div>
-                                <div className="font-bold text-[#0D3B50] text-sm">4 Year Free</div>
-                                <div className="text-[10px] text-gray-500 uppercase tracking-wider font-bold">Service Warranty</div>
+                            <div className="absolute -top-4 -right-4 lg:-top-6 lg:-right-6 glass p-3 lg:p-5 rounded-xl lg:rounded-2xl shadow-2xl z-20 animate-bounce transition-all">
+                                <div className="text-xl lg:text-3xl mb-1">🛡️</div>
+                                <div className="font-bold text-[#0D3B50] text-[10px] lg:text-sm whitespace-nowrap">4 Year Free</div>
+                                <div className="text-[8px] lg:text-[10px] text-gray-500 uppercase tracking-wider font-bold whitespace-nowrap">Service Warranty</div>
                             </div>
 
-                            <div className="absolute -bottom-10 -left-10 glass p-6 rounded-2xl shadow-2xl z-20 flex items-center gap-4 border-l-4 border-[#035797]">
-                                <div className="bg-blue-100 p-3 rounded-full text-2xl">💧</div>
+                            <div className="absolute -bottom-6 -left-6 lg:-bottom-10 lg:-left-10 glass p-4 lg:p-6 rounded-xl lg:rounded-2xl shadow-2xl z-20 flex items-center gap-2 lg:gap-4 border-l-4 border-[#035797]">
+                                <div className="bg-blue-100 p-2 lg:p-3 rounded-full text-lg lg:text-2xl">💧</div>
                                 <div>
-                                    <div className="font-bold text-[#0D3B50] text-lg leading-tight">100% Pure</div>
-                                    <div className="text-xs text-gray-500 font-medium tracking-wide">Mineral RO Technology</div>
+                                    <div className="font-bold text-[#0D3B50] text-sm lg:text-lg leading-tight whitespace-nowrap">100% Pure</div>
+                                    <div className="text-[8px] lg:text-xs text-gray-500 font-medium tracking-wide whitespace-nowrap">Mineral RO Technology</div>
                                 </div>
                             </div>
                         </div>
