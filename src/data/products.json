@@ -1,140 +1,164 @@
 [
     {
-        "id": "ro-1",
-        "name": "Reverse Osmosis Pro",
-        "slug": "reverse-osmosis-pro",
+        "id": "kent-1",
+        "name": "KENT Grand Star",
+        "slug": "kent-grand-star",
         "category": "RO",
-        "price": 14999,
-        "originalPrice": 16999,
+        "price": 18500,
+        "originalPrice": 21000,
         "tags": [
             "featured",
             "bestseller"
         ],
-        "description": "Clean drinking water should be available to everyone. We work to make it possible.",
-        "warranty": "1 Year Free Service",
+        "description": "Multi-stage purification process of RO+UV+UF+TDS Control+UV In-tank.",
+        "warranty": "1 Year + 3 Years Service",
         "features": [
-            "Advanced 7-stage purification",
-            "Mineral RO technology retains essential minerals",
-            "Zero water wastage technology",
-            "Smart LCD display for filter life"
+            "Digital display of purity",
+            "Zero Water Wastage Technology",
+            "Mineral RO TM Technology",
+            "Saves 100% water"
         ],
-        "image": "/product-images/ro_purifier_1775470141435.png",
+        "image": "/product-images/kent/imgi_4_kent-grand-star-b.webp",
         "images": [
-            "/product-images/ro_purifier_1775470141435.png"
+            "/product-images/kent/imgi_4_kent-grand-star-b.webp"
         ]
     },
     {
-        "id": "ro-2",
-        "name": "Under-sink Smart RO",
-        "slug": "under-sink-smart-ro",
+        "id": "kent-2",
+        "name": "KENT Prime Star",
+        "slug": "kent-prime-star",
         "category": "RO",
-        "price": 18500,
-        "originalPrice": 20000,
-        "tags": [
-            "premium"
-        ],
-        "description": "Powerful under-sink purification system for modern modular kitchens.",
-        "warranty": "1 Year Free Service",
-        "features": [
-            "Space-saving under-sink design",
-            "High flow rate (up to 20L/hr)",
-            "Alkaline boost filter",
-            "Includes premium stainless steel faucet"
-        ],
-        "image": "/product-images/under_sink_ro_1775470206804.png"
-    },
-    {
-        "id": "tb-1",
-        "name": "Whisper Spring 0.75l",
-        "slug": "whisper-spring-075l",
-        "category": "RO",
-        "price": 2499,
-        "originalPrice": 3990,
-        "tags": [
-            "bestseller"
-        ],
-        "description": "Compact and portable tabletop filter for small apartments.",
-        "warranty": "6 Months Warranty",
-        "features": [
-            "Compact footprint for small kitchens",
-            "Carbon block filtration for chlorine and odor",
-            "BPA-free tritan material",
-            "Filter change indicator"
-        ],
-        "image": "/product-images/tabletop_filter_1775470191344.png"
-    },
-    {
-        "id": "tb-2",
-        "name": "Compact Tabletop Filter",
-        "slug": "compact-tabletop-filter",
-        "category": "RO",
-        "price": 3899,
-        "originalPrice": 5490,
-        "tags": [],
-        "description": "Clean drinking water should be available to everyone. We work to make it possible.",
-        "warranty": "1 Year Warranty",
-        "features": [
-            "Direct tap connection",
-            "3-stage instant purification",
-            "No electricity required",
-            "Removes 99% microplastics"
-        ],
-        "image": "/product-images/tabletop_filter_1775470191344.png"
-    },
-    {
-        "id": "cl-1",
-        "name": "Premium Hot & Cold Dispenser",
-        "slug": "premium-hot-cold-dispenser",
-        "category": "Geyser",
-        "price": 11500,
-        "originalPrice": 14999,
+        "price": 17500,
+        "originalPrice": 19500,
         "tags": [
             "featured"
         ],
-        "description": "Instant hot and cold water for your office or home.",
-        "warranty": "1 Year Compressor Warranty",
+        "description": "Smart RO purifier with Digital Display of Purity & Performance.",
+        "warranty": "1 Year + 3 Years Service",
         "features": [
-            "Instant hot, cold, and room temp water",
-            "Child safety lock for hot water",
-            "Energy-efficient cooling compressor",
-            "Sleek minimalist design"
+            "RO+UV+UF+TDS Control",
+            "Digital display for filter life",
+            "High purification capacity",
+            "Elegant wall-mounted design"
         ],
-        "image": "/product-images/water_dispenser_1775470175127.png"
+        "image": "/product-images/kent/imgi_10_kent-prime-star-w.webp"
     },
     {
-        "id": "ct-1",
-        "name": "Additional Cartridges Pro",
-        "slug": "additional-cartridges-pro",
+        "id": "kent-3",
+        "name": "KENT Sapphire",
+        "slug": "kent-sapphire",
         "category": "RO",
-        "price": 1450,
-        "originalPrice": 1999,
-        "tags": [],
-        "description": "High-efficiency replacement cartridges for your RO system.",
-        "warranty": "No Warranty",
-        "features": [
-            "Universal fit for Reverse Osmosis Pro",
-            "6-month lifespan under normal usage",
-            "NSF certified carbon core",
-            "Easy twist-and-lock installation"
+        "price": 16000,
+        "originalPrice": 18000,
+        "tags": [
+            "bestseller"
         ],
-        "image": "/product-images/filter_cartridge_1775470221849.png"
+        "description": "A compact and elegant RO water purifier for modern kitchens.",
+        "warranty": "1 Year Warranty",
+        "features": [
+            "Counter-top/Wall-mounted design",
+            "Purification by RO+UV+UF+TDS Control",
+            "Transparent storage tank",
+            "Fully automatic operation"
+        ],
+        "image": "/product-images/kent/imgi_11_kent-sapphire-b.webp"
     },
     {
-        "id": "ct-2",
-        "name": "Filter Tap Classic",
-        "slug": "filter-tap-classic",
+        "id": "kent-4",
+        "name": "KENT Maxx Alkaline",
+        "slug": "kent-maxx-alkaline",
         "category": "RO",
-        "price": 2100,
-        "originalPrice": 2100,
-        "tags": [],
-        "description": "Durable and stylish tap for filtered water outlets.",
-        "warranty": "5 Years Valve Warranty",
-        "features": [
-            "Brushed nickel finish",
-            "Ceramic disc valve for drip-free performance",
-            "Compatible with under-sink systems",
-            "360-degree swivel spout"
+        "price": 14500,
+        "originalPrice": 16500,
+        "tags": [
+            "new"
         ],
-        "image": "/product-images/filter_cartridge_1775470221849.png"
+        "description": "UV water purifier with Alkaline technology for healthy water.",
+        "warranty": "1 Year Warranty",
+        "features": [
+            "Double purification by UV+UF",
+            "Detachable storage tank",
+            "Computer controlled operation",
+            "High power 11W UV lamp"
+        ],
+        "image": "/product-images/kent/imgi_7_kent-maxx-alkaline-b.webp"
+    },
+    {
+        "id": "kent-5",
+        "name": "KENT Zenith RO",
+        "slug": "kent-zenith-ro",
+        "category": "RO",
+        "price": 19000,
+        "originalPrice": 22000,
+        "tags": [
+            "premium"
+        ],
+        "description": "Premium RO purifier with advanced mineral retention.",
+        "warranty": "1 Year + 3 Years Service",
+        "features": [
+            "Multiple purification RO+UV+UF+TDS",
+            "Zero Water Wastage",
+            "Large 9L storage tank",
+            "Indicator for filter change"
+        ],
+        "image": "/product-images/kent/imgi_87_zenith-ro.webp"
+    },
+    {
+        "id": "kent-6",
+        "name": "KENT Gold",
+        "slug": "kent-gold",
+        "category": "RO",
+        "price": 3500,
+        "originalPrice": 4500,
+        "tags": [
+            "budget"
+        ],
+        "description": "Gravity based non-electric UF water purifier.",
+        "warranty": "1 Year Warranty",
+        "features": [
+            "Elegant tabletop design",
+            "Non-electric and chemical free",
+            "High base for easy glass filling",
+            "Saves water - no wastage"
+        ],
+        "image": "/product-images/kent/imgi_88_kent-gold.webp"
+    },
+    {
+        "id": "kent-7",
+        "name": "KENT Next Gen RO",
+        "slug": "kent-next-gen-ro",
+        "category": "RO",
+        "price": 18000,
+        "originalPrice": 20000,
+        "tags": [],
+        "description": "Next generation water purification for smart homes.",
+        "warranty": "1 Year + 3 Years Service",
+        "features": [
+            "Patented Mineral RO Technology",
+            "Digital display screen",
+            "Purification by RO+UV+UF+TDS Control",
+            "Wall-mountable design"
+        ],
+        "image": "/product-images/kent/imgi_91_kent-next-gen-ro-water-purifier.png"
+    },
+    {
+        "id": "kent-8",
+        "name": "KENT Washing Machine Softener",
+        "slug": "kent-washing-machine-softener",
+        "category": "RO",
+        "price": 6000,
+        "originalPrice": 7500,
+        "tags": [
+            "utility"
+        ],
+        "description": "Converts hard water into soft water for better washing results.",
+        "warranty": "1 Year Warranty",
+        "features": [
+            "Prevents scaling on heating elements",
+            "Reduces detergent consumption",
+            "Easy to install and regenerate",
+            "Longer life of washing machine"
+        ],
+        "image": "/product-images/kent/imgi_93_kent-washing-machine-water-softener.png"
     }
 ]

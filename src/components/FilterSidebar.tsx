@@ -6,8 +6,8 @@ interface FilterSidebarProps {
     allTags: string[]
 }
 
-const CATEGORIES: Category[] = ['All', 'RO', 'Geyser', 'Solar']
-const MAX_PRICE = 40000
+const CATEGORIES: Category[] = ['All', 'RO', 'Tabletop Filters', 'Dispensers', 'Softeners']
+const MAX_PRICE = 50000
 
 export default function FilterSidebar({ filters, onFilterChange, allTags }: FilterSidebarProps) {
     const update = (partial: Partial<FilterState>) =>
@@ -54,21 +54,21 @@ export default function FilterSidebar({ filters, onFilterChange, allTags }: Filt
 
             {/* Category */}
             <div>
-                <h3 className="text-sm font-semibold text-gray-700 mb-3">Category</h3>
-                <div className="space-y-1.5">
+                <h3 className="text-xs font-black text-[#0D3B50]/40 uppercase tracking-widest mb-4">Category</h3>
+                <div className="space-y-2">
                     {CATEGORIES.map(cat => (
                         <button
                             key={cat}
                             onClick={() => update({ category: cat })}
-                            className={`w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-sm font-medium transition-colors ${filters.category === cat
-                                    ? 'bg-blue-700 text-white'
-                                    : 'text-gray-700 hover:bg-blue-50 hover:text-blue-700'
+                            className={`w-full flex items-center justify-between px-4 py-3 rounded-2xl text-sm font-bold transition-all ${filters.category === cat
+                                ? 'bg-[#035797] text-white shadow-lg shadow-blue-900/20'
+                                : 'text-gray-600 hover:bg-[#035797]/5 hover:text-[#035797] border border-transparent'
                                 }`}
                         >
                             <span>{cat === 'All' ? 'All Products' : cat}</span>
                             {filters.category === cat && (
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                                 </svg>
                             )}
                         </button>
@@ -115,16 +115,16 @@ export default function FilterSidebar({ filters, onFilterChange, allTags }: Filt
 
             {/* Tags */}
             {allTags.length > 0 && (
-                <div>
-                    <h3 className="text-sm font-semibold text-gray-700 mb-3">Tags</h3>
+                <div className="pt-4 border-t border-gray-50">
+                    <h3 className="text-xs font-black text-[#0D3B50]/40 uppercase tracking-widest mb-4">Tags</h3>
                     <div className="flex flex-wrap gap-2">
                         {allTags.map(tag => (
                             <button
                                 key={tag}
                                 onClick={() => toggleTag(tag)}
-                                className={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${filters.tags.includes(tag)
-                                        ? 'bg-blue-700 text-white'
-                                        : 'bg-gray-100 text-gray-600 hover:bg-blue-100 hover:text-blue-700'
+                                className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${filters.tags.includes(tag)
+                                    ? 'bg-[#035797] text-white shadow-lg shadow-blue-900/20'
+                                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                                     }`}
                             >
                                 {tag}

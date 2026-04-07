@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     description:
         'Shop RO water purifiers, gas geysers, and solar water heaters at the best prices. Gurukrupa Water Solutions — trusted dealer in Gujarat.',
     keywords: 'RO purifier, water purifier, gas geyser, solar water heater, Gurukrupa, Gujarat',
+    icons: {
+        icon: '/favicon.ico',
+    },
     openGraph: {
         title: 'Gurukrupa Water Solutions',
         description: 'Your trusted source for RO purifiers, geysers, and solar heaters.',

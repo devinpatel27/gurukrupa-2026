@@ -11,6 +11,8 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  /* Adjust based on navbar height */
   font-size: 16px;
 }
 
@@ -27,6 +29,7 @@ body {
   html {
     color-scheme: light;
   }
+
   body {
     background-color: #ffffff;
     color: #1a1a1a;
@@ -36,27 +39,19 @@ body {
 /* Component Utilities  */
 @layer components {
   .btn-primary {
-    @apply bg-blue-700 text-white font-semibold px-5 py-3 rounded-xl 
-           hover:bg-blue-800 active:bg-blue-900 transition-colors duration-150
-           text-base min-h-[48px] flex items-center justify-center gap-2;
+    @apply bg-blue-700 text-white font-semibold px-5 py-3 rounded-xl hover:bg-blue-800 active:bg-blue-900 transition-colors duration-150 text-base min-h-[48px] flex items-center justify-center gap-2;
   }
 
   .btn-secondary {
-    @apply bg-white text-blue-700 font-semibold px-5 py-3 rounded-xl border-2 border-blue-700
-           hover:bg-blue-50 active:bg-blue-100 transition-colors duration-150
-           text-base min-h-[48px] flex items-center justify-center gap-2;
+    @apply bg-white text-blue-700 font-semibold px-5 py-3 rounded-xl border-2 border-blue-700 hover:bg-blue-50 active:bg-blue-100 transition-colors duration-150 text-base min-h-[48px] flex items-center justify-center gap-2;
   }
 
   .btn-whatsapp {
-    @apply bg-green-500 text-white font-semibold px-5 py-3 rounded-xl 
-           hover:bg-green-600 active:bg-green-700 transition-colors duration-150
-           text-base min-h-[48px] flex items-center justify-center gap-2;
+    @apply bg-green-500 text-white font-semibold px-5 py-3 rounded-xl hover:bg-green-600 active:bg-green-700 transition-colors duration-150 text-base min-h-[48px] flex items-center justify-center gap-2;
   }
 
   .btn-call {
-    @apply bg-orange-500 text-white font-semibold px-5 py-3 rounded-xl 
-           hover:bg-orange-600 active:bg-orange-700 transition-colors duration-150
-           text-base min-h-[48px] flex items-center justify-center gap-2;
+    @apply bg-orange-500 text-white font-semibold px-5 py-3 rounded-xl hover:bg-orange-600 active:bg-orange-700 transition-colors duration-150 text-base min-h-[48px] flex items-center justify-center gap-2;
   }
 
   .card {
@@ -77,6 +72,18 @@ body {
 
   .container {
     @apply max-w-6xl mx-auto px-4;
+  }
+
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+
+  .premium-gradient {
+    background: linear-gradient(135deg, #035797 0%, #0D3B50 100%);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#035797] to-[#0D3B50];
   }
 }
 

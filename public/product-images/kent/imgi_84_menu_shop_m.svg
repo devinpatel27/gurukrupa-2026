@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46.128" height="46.128">
+    <defs>
+        <filter id="a" x="5.064" y="6.064" width="36" height="39" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="Group 6645">
+        <g data-name="shopping-bag (1)">
+            <g style="filter:url(#a)" data-name="Group 6648">
+                <path data-name="Path 2633" d="M52.855 5.73a.164.164 0 0 0-.163-.152h-2.946v-.82a4.745 4.745 0 1 0-9.491 0v.82H37.31a.164.164 0 0 0-.163.152L36 20.823a.164.164 0 0 0 .163.177h17.674a.164.164 0 0 0 .163-.176zm-11.29-.972a3.436 3.436 0 1 1 6.873 0v.82h-6.874zm-.655 5.414a1.64 1.64 0 0 1-1.636-1.641 1.549 1.549 0 0 1 .982-1.5v1.5a.655.655 0 1 0 1.309 0v-1.5a1.553 1.553 0 0 1 .982 1.5 1.64 1.64 0 0 1-1.637 1.641zm8.182 0a1.64 1.64 0 0 1-1.636-1.641 1.549 1.549 0 0 1 .982-1.5v1.5a.655.655 0 1 0 1.309 0v-1.5a1.553 1.553 0 0 1 .982 1.5 1.64 1.64 0 0 1-1.638 1.641z" transform="translate(-21.935 12.064)" style="fill:#1f75fe"/>
+            </g>
+        </g>
+    </g>
+</svg>

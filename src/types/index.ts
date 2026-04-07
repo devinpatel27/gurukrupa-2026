@@ -2,7 +2,7 @@ export interface Product {
   id: string;
   name: string;
   slug: string;
-  category: 'RO' | 'Geyser' | 'Solar';
+  category: 'RO' | 'Geyser' | 'Solar' | 'Tabletop Filters' | 'Dispensers' | 'Softeners';
   price: number;
   originalPrice: number;
   tags: string[];
@@ -13,7 +13,7 @@ export interface Product {
   warranty: string;
 }
 
-export type Category = 'All' | 'RO' | 'Geyser' | 'Solar';
+export type Category = 'All' | 'RO' | 'Geyser' | 'Solar' | 'Tabletop Filters' | 'Dispensers' | 'Softeners';
 
 export interface FilterState {
   category: Category;
