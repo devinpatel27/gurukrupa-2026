@@ -13,8 +13,8 @@ export default function ImageSlider({ images, productName, discount = 0 }: Image
     const [activeIndex, setActiveIndex] = useState(0)
     const [isZoomed, setIsZoomed] = useState(false)
 
-    // Deduplicate array just in case
-    const uniqueImages = Array.from(new Set(images))
+    // Simulate multiple images for slider UI testing when only 1 is provided
+    const displayImages = images.length === 1 ? [images[0], images[0], images[0]] : images
 
     // Close lightbox on escape key
     useEffect(() => {
@@ -33,7 +33,7 @@ export default function ImageSlider({ images, productName, discount = 0 }: Image
                 onClick={() => setIsZoomed(true)}
             >
                 <Image
-                    src={uniqueImages[activeIndex]}
+                    src={displayImages[activeIndex]}
                     alt={`${productName} view ${activeIndex + 1}`}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -49,12 +49,12 @@ export default function ImageSlider({ images, productName, discount = 0 }: Image
                 )}
 
                 {/* Navigation Arrows (visible on hover/desktop) */}
-                {uniqueImages.length > 1 && (
+                {displayImages.length > 1 && (
                     <>
                         <button
                             onClick={(e) => {
                                 e.stopPropagation()
-                                setActiveIndex(prev => prev === 0 ? uniqueImages.length - 1 : prev - 1)
+                                setActiveIndex(prev => prev === 0 ? displayImages.length - 1 : prev - 1)
                             }}
                             className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 hover:bg-white rounded-full flex items-center justify-center shadow-lg text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity z-10"
                             aria-label="Previous image"
@@ -66,7 +66,7 @@ export default function ImageSlider({ images, productName, discount = 0 }: Image
                         <button
                             onClick={(e) => {
                                 e.stopPropagation()
-                                setActiveIndex(prev => prev === uniqueImages.length - 1 ? 0 : prev + 1)
+                                setActiveIndex(prev => prev === displayImages.length - 1 ? 0 : prev + 1)
                             }}
                             className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/80 hover:bg-white rounded-full flex items-center justify-center shadow-lg text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity z-10"
                             aria-label="Next image"
@@ -80,9 +80,9 @@ export default function ImageSlider({ images, productName, discount = 0 }: Image
             </div>
 
             {/* Thumbnails Strip */}
-            {uniqueImages.length > 1 && (
+            {displayImages.length > 1 && (
                 <div className="flex gap-3 overflow-x-auto pb-2 border-b border-transparent scrollbar-none">
-                    {uniqueImages.map((img, idx) => (
+                    {displayImages.map((img, idx) => (
                         <button
                             key={idx}
                             onClick={() => setActiveIndex(idx)}
@@ -115,7 +115,7 @@ export default function ImageSlider({ images, productName, discount = 0 }: Image
 
                     <div className="relative w-full max-w-5xl aspect-square sm:aspect-video px-4">
                         <Image
-                            src={uniqueImages[activeIndex]}
+                            src={displayImages[activeIndex]}
                             alt={`Zoomed ${productName}`}
                             fill
                             className="object-contain"
@@ -124,10 +124,10 @@ export default function ImageSlider({ images, productName, discount = 0 }: Image
                         />
                     </div>
 
-                    {uniqueImages.length > 1 && (
+                    {displayImages.length > 1 && (
                         <>
                             <button
-                                onClick={() => setActiveIndex(prev => prev === 0 ? uniqueImages.length - 1 : prev - 1)}
+                                onClick={() => setActiveIndex(prev => prev === 0 ? displayImages.length - 1 : prev - 1)}
                                 className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 w-14 h-14 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors"
                             >
                                 <svg className="w-8 h-8 -translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -135,7 +135,7 @@ export default function ImageSlider({ images, productName, discount = 0 }: Image
                                 </svg>
                             </button>
                             <button
-                                onClick={() => setActiveIndex(prev => prev === uniqueImages.length - 1 ? 0 : prev + 1)}
+                                onClick={() => setActiveIndex(prev => prev === displayImages.length - 1 ? 0 : prev + 1)}
                                 className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 w-14 h-14 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors"
                             >
                                 <svg className="w-8 h-8 translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
